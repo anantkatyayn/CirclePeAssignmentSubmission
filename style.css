@@ -1,0 +1,833 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+
+/* General Reset and Body Styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'League Spartan', Arial, Helvetica, sans-serif;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #1b1b1b; /* Dark background color */
+    overflow: hidden;
+}
+
+/* Container for the entire content */
+.bg{
+    background: radial-gradient(rgba(59,149,255,0.25)0%, rgba(27,27,27,0.02)75%);
+    /* opacity: 12%; */
+    border-radius: 850px;
+    position: relative;
+    
+}
+
+
+.maincont{
+    height: 100%;
+    animation: switchSection 12s steps(1 ,end) infinite; /* 16s for full cycle, linear timing, infinite loop */
+    
+
+}
+section{
+    height: 100vh;
+    display: flex;
+}
+
+@keyframes switchSection {
+    0%, 8.33% {
+        transform: translateY(0vh); /* Show Page 1 */
+    }
+    16.66%, 24.99% {
+        transform: translateY(-100vh); /* Instant switch to Page 2 */
+    }
+    33.33%, 41.66% {
+        transform: translateY(-200vh); /* Instant switch to Page 3 */
+    }
+    50%, 58.33% {
+        transform: translateY(-300vh); /* Instant switch to Page 4 */
+    }
+    66.66%, 74.99% {
+        transform: translateY(-400vh); /* Instant switch to Page 5 */
+    }
+    83.33%, 100% {
+        transform: translateY(-500vh); /* Instant switch to Page 6 */
+    }
+}
+
+/* page 0 */
+.containerPage0 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y:hidden ;
+    
+}
+
+/* Left Side Panel Styling */
+.left-panel0 {
+    width: 75%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 180px;
+    left: 240px;
+    z-index: 2;
+}
+.left-panel0 .h1Work{
+    margin: 0px;
+    color: #eeeeee;
+}
+.left-panel0 .h1QM{
+    margin: 0px;
+    color: #459BFF;
+}
+
+.left-panel0 h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin: 0px;
+    color: #888888;
+    font-family: "League Spartan";
+}
+
+.left-panel0 .steps-info0 {
+    margin-top: 24px;
+}
+
+.steps-info0 p {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+
+.steps-info0 p .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.steps-info0 p .yel{ 
+    color: #FCF1B6;
+}
+.steps-info0 p .dot.yellow {
+    background-color: #F6E43F; /* Yellow dot */
+}
+
+.steps-info0 p .dot.grey {
+    background-color: #d9d9d9; /* Grey dot */
+}
+
+
+/* Right Side Panel with Phone Mockup */
+.right-panel0 {
+    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-mockup0 {
+    
+    /* width: px; */
+    height: 600px;
+    border-radius: 40px, 40px,0px,0px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #1b1b1b;
+    position: relative;
+    top: -32px;
+    left: -220px;
+}
+
+.phone-mockup0 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.progressBar0{
+    height: 230px;
+    position: relative;
+    left: -120px;
+}
+.progressBar0 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+
+
+/* page1 */
+.containerPage1 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y:hidden ;
+    
+}
+
+/* Left Side Panel Styling */
+.left-panel {
+    width: 75%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 180px;
+    left: 240px;
+    z-index: 2;
+}
+.left-panel .arrow{
+    position: absolute;
+    left: 256px;
+    top: 4px;
+
+}
+.left-panel .h1One{
+    color: #eeeeee;
+}
+.left-panel h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #888888;
+    font-family: "League Spartan";
+}
+
+.left-panel .steps-info {
+    margin-top: 24px;
+}
+
+.steps-info p {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+
+.steps-info p .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.steps-info p .yel{ 
+    color: #FCF1B6;
+}
+.steps-info p .dot.yellow {
+    background-color: #F6E43F; /* Yellow dot */
+}
+
+.steps-info p .dot.grey {
+    background-color: #d9d9d9; /* Grey dot */
+}
+
+
+/* Right Side Panel with Phone Mockup */
+.right-panel {
+    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-mockup {
+    
+    width: 360px;
+    /* height: 581px; */
+    border-radius: 40px, 40px,0px,0px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #1b1b1b;
+    position: relative;
+    top: 80px;
+    left: -220px;
+}
+
+.phone-mockup img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.progressBar{
+    height: 230px;
+    position: relative;
+    left: -120px;
+}
+.progressBar img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* Optional: Add a frame or bezel around the phone image */
+.phone-mockup::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+/* Responsive Design */
+/* @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left-panel h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .steps-info p {
+        justify-content: center;
+    }
+
+    .phone-mockup {
+        width: 250px;
+        height: 500px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-panel h1 {
+        font-size: 2em;
+    }
+
+    .steps-info p {
+        font-size: 1em;
+    }
+
+    .phone-mockup {
+        width: 200px;
+        height: 400px;
+    }
+} */
+
+/* page2 */
+
+
+.containerPage2 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y:hidden ;
+    
+}
+.left-panel2 {
+    width: 75%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 180px;
+    left: 240px;
+    z-index: 2;
+}
+.left-panel2 .arrow{
+    position: absolute;
+    left: 320px;
+    top: 40px;
+    transform: scaleY(-1);
+
+}
+.left-panel2 .h1One{
+    color: #eeeeee;
+}
+.left-panel2 h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #888888;
+    font-family: "League Spartan";
+}
+
+.left-panel2 .steps-info2 {
+    margin-top: 24px;
+}
+
+
+.steps-info2 p {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+
+.steps-info2 p .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.yel2{ 
+    color: #FCF1B6;
+}
+.steps-info2 p .dot.yellow {
+    background-color: #F6E43F; /* Yellow dot */
+}
+
+.steps-info2 p .dot.grey {
+    background-color: #d9d9d9; /* Grey dot */
+}
+
+.right-panel2 {
+    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-mockup2 {
+    
+    width: 360px;
+    height: 710px;
+    border-radius: 40px, 40px,0px,0px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #1b1b1b;
+    position: relative;
+    top: 12px;
+    left: -220px;
+}
+
+.phone-mockup2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.progressBar2{
+    height: 230px;
+    position: relative;
+    left: -120px;
+}
+.progressBar2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+/* Page3 */
+.containerPage3 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y:hidden;
+}
+.left-panel3 {
+    width: 75%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 180px;
+    left: 240px;
+    z-index: 2;
+}
+.left-panel3 .arrow{
+    position: absolute;
+    left: 280px;
+    top: 120px;
+    transform: scaleY(-1);
+    rotate: 45.04deg;
+
+}
+.left-panel3 .h1One{
+    color: #eeeeee;
+}
+.left-panel3 h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #888888;
+    font-family: "League Spartan";
+}
+
+.left-panel3 .steps-info3 {
+    margin-top: 24px;
+}
+
+
+.steps-info3 p {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    width: 50vw;
+}
+
+.steps-info3 .subPoint{
+    position: relative;
+    left: 28px;
+}
+
+.steps-info3 p .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+.steps-info3 p .dotSmall {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.yel3{ 
+    color: #FCF1B6;
+}
+.steps-info3 p .dot.yellow {
+    background-color: #F6E43F; /* Yellow dot */
+}
+
+.steps-info3 p .dotSmall.grey {
+    background-color: #d9d9d9; /* Grey dot */
+}
+
+.right-panel3 {
+    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-mockup3 {
+    
+    width: 360px;
+    height: 752px;
+    border-radius: 40px, 40px,0px,0px;
+    overflow: hidden;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
+    /* background-color: #1b1b1b; */
+    position: relative;
+    top: -64px;
+    left: -236px;
+}
+
+.phone-mockup3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.progressBar3{
+    height: 230px;
+    position: relative;
+    left: -120px;
+}
+.progressBar3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+
+
+
+/* Page 4 */
+.containerPage4 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y:hidden;
+}
+.left-panel4 {
+    width: 75%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 180px;
+    left: 240px;
+    z-index: 2;
+}
+.left-panel4 .arrow{
+    position: absolute;
+    left: 264px;
+    top: 120px;
+    transform: scaleY(-1);
+    rotate: 45deg;
+
+}
+.left-panel4 .h1One{
+    color: #eeeeee;
+}
+.left-panel4 h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #888888;
+    font-family: "League Spartan";
+}
+
+.left-panel4 .steps-info4 {
+    margin-top: 12px;
+}
+
+
+.steps-info4 p {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    width: 50vw;
+}
+
+
+.steps-info4 p .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+.steps-info4 p .dotSmall {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.yel4{ 
+    color: #FCF1B6;
+}
+.steps-info4 p .dot.yellow {
+    background-color: #F6E43F; /* Yellow dot */
+}
+
+.steps-info4 p .dotSmall.grey {
+    background-color: #d9d9d9; /* Grey dot */
+}
+
+.right-panel4 {
+    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-mockup4 {
+    
+    /* width: 360px; */
+    height: 600px;
+    border-radius: 40px, 40px,0px,0px;
+    overflow: hidden;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
+    /* background-color: #1b1b1b; */
+    position: relative;
+    top: -32px;
+    left: -236px;
+}
+
+.phone-mockup4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.progressBar4{
+    height: 230px;
+    position: relative;
+    left: -120px;
+}
+.progressBar4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+
+/* page 5 */
+.containerPage5 {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y:hidden;
+}
+.left-panel5 {
+    width: 75%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    position: relative;
+    top: 180px;
+    left: 240px;
+    z-index: 2;
+}
+.left-panel5 .arrow{
+    position: absolute;
+    left: 264px;
+    top: 160px;
+    transform: scaleY(-1);
+    rotate: 45deg;
+
+}
+.left-panel5 .h1One{
+    color: #eeeeee;
+}
+.left-panel5 h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #888888;
+    font-family: "League Spartan";
+}
+
+.left-panel5 .steps-info5 {
+    margin-top: 24px;
+}
+
+
+.steps-info5 p {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    font-size: 1.2em;
+    width: 50vw;
+}
+
+.steps-info5 .subPoint{
+    position: relative;
+    left: 28px;
+}
+
+.steps-info5 p .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+.steps-info5 p .dotSmall {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.yel5{ 
+    color: #FCF1B6;
+}
+.steps-info5 p .dot.yellow {
+    background-color: #F6E43F; /* Yellow dot */
+}
+
+.steps-info5 p .dotSmall.grey {
+    background-color: #d9d9d9; /* Grey dot */
+}
+
+.right-panel5 {
+    
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-mockup5 {
+    
+    /* width: 360px; */
+    height: 600px;
+    border-radius: 40px, 40px,0px,0px;
+    overflow: hidden;
+    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); */
+    /* background-color: #1b1b1b; */
+    position: relative;
+    top: -32px;
+    left: -236px;
+}
+
+.phone-mockup5 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.progressBar5{
+    height: 230px;
+    position: relative;
+    left: -120px;
+}
+.progressBar5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
